@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Trainor extends Model
 {
     public function courses(){
-        return $this->hasMany('App\Course');
+       return $this->hasMany('App\Course');
     }
     public function user(){
         return $this->belongsTo('App\User');
